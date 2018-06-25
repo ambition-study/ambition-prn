@@ -1,9 +1,9 @@
 from edc_constants.constants import YES
 from faker import Faker
-from model_mommy.recipe import Recipe
+from model_mommy.recipe import Recipe, related
 
 from .models import DeathReport, StudyTerminationConclusion, StudyTerminationConclusionW10
-from .models import ProtocolDeviationViolation
+from .models import ProtocolDeviationViolation, DeathReportTmg
 
 fake = Faker()
 
@@ -32,5 +32,10 @@ studyterminationconclusionw10 = Recipe(
 
 protocoldeviationviolation = Recipe(
     ProtocolDeviationViolation,
+    action_identifier=None,
+    tracking_identifier=None)
+
+deathreporttmg = Recipe(
+    DeathReportTmg,
     action_identifier=None,
     tracking_identifier=None)
