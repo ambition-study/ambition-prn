@@ -11,12 +11,12 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='ambition-prn',
-    version='0.1.1',
+    version='0.1.2',
     author=u'Erik van Widenfelt',
     author_email='ew2789@gmail.com',
     packages=find_packages(),
     include_package_data=True,
-    url='https://github.com/botswana-harvard/ambition-prn',
+    url='https://github.com/ambition-study/ambition-prn',
     license='GPL license, see LICENSE',
     description='PRN forms such as offstudy, protocol violation, etc',
     long_description=README,
